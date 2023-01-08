@@ -23,9 +23,14 @@ Dummy Json Request Body:<br />
 }<br />
 <br />
 <br />
+How to run the xUnit test project:<br />
+Open the solution in VS and then from View Menu open Test Explorer. From there we can run the test cases.<br />
+<br />
+<br />
 Improvements for future:<br />
 Implement logging functionality into the applciation. We can use any modern framework like Serilog for this.<br />
 Work on better exception handling. Currently there are some cases where exception handling is missing like let's say the item id passed is invalid or the length of item id array passed as json body to the API is empty.<br />
+Write more test cases.<br />
 <br />
 <br />
 Assumptions:<br />
