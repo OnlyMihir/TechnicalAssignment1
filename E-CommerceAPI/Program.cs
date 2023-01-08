@@ -1,3 +1,6 @@
+using E_CommerceAPI.Interfaces;
+using E_CommerceAPI.Services;
+
 namespace E_CommerceAPI
 {
     public class Program
@@ -7,6 +10,7 @@ namespace E_CommerceAPI
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddTransient<IProductInfo, ProductInfoService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
